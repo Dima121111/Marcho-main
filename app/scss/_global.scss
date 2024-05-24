@@ -1,0 +1,49 @@
+body {
+  font-size: 16px;
+  line-height: 26px;
+  color: $global-color;
+  background-color: $bg-color;
+  font-family: 'Quicksand_Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.button {
+  padding: 14px 18px;
+  color: $button-color;
+  text-transform: uppercase;
+  color: $bg-color;
+  background-color: $button-color;
+  transition: color 0.5s, background-color 0.5s, outline 0.5s, box-shadow 0.5s, opacity 0.5s;
+}
+
+.button:hover {
+  color: $button-color;
+  background-color: $bg-color;
+  outline: 1px solid $button-color;
+}
+
+.button:focus {
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
+
+.button:active {
+  opacity: 50%;
+}
